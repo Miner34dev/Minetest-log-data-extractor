@@ -45,7 +45,22 @@ def import_mt_log(file):
 		except:
 			f_data[year][month][day][hour][minute][second] = list()
 		if x[35:].find("Server:") == -1:
-			f_data[year][month][day][hour][minute][second].append(x[37:])
+			y = x[37:]
 		else:
-			f_data[x[:4]][x[5:7]][x[8:10]][x[11:13]][x[14:16]][x[17:19]].append(x[35:])
+			y = x[35:]
+		y = y.split(" ")
+		if y[2] == "node":
+			y.remove("node")
+			y.remove("at")
+		elif y[1] == "digs":
+			y.remove("at")
+		elif y[1] == "Shutting":
+			y.remove("down")
+			y[1] = "Shutting down"
+		elif y[2] == "joins":
+			z = y[0]
+			y.clear()
+			y.append(z)
+			y.append("joins game")
+		f_data[x[:4]][x[5:7]][x[8:10]][x[11:13]][x[14:16]][x[17:19]].append(y)
 	return f_data
