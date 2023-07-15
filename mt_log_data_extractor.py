@@ -1,5 +1,4 @@
 def import_mt_log(file):
-	import argparse
 	from pathlib import Path
 	input_path = Path(file)
 	input_file = open(input_path, mode = "rt")
