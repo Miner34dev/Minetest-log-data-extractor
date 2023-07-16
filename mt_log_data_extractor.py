@@ -1,4 +1,5 @@
 def import_mt_log(file):
+	'''Read Minetest's log at file and return a dictionary containing the elaburated and sorted data'''
 	from pathlib import Path
 	input_path = Path(file)
 	input_file = open(input_path, mode = "rt")
