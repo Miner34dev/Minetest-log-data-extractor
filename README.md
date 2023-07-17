@@ -10,4 +10,4 @@ Currently, there is no pip package for this module, so you will need to istall i
 # Contributing
 If you would like to contribute to this project you can do so through GitHub by forking the repository and sending a pull request (PR). You can also simply report issues (bugs).
 
-**We also need a icon for this project**
+**We also need a icon for this project.**
