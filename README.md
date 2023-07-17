@@ -4,6 +4,6 @@ MT log data extractor is a python module that extracts data from Minetest logs. 
 Minetest log data extractor is a Open Source project under the MIT License (see [LICENSE](./LICENSE) file for details).
 # Installing
 Currently, there is no pip package for this module, so you will need to istall it manually:
-- Download this module from github from the code section (latest development version, may not work) or from the releases section.
+- Download this module from [here](https://github.com/Miner34dev/Minetest-log-data-extractor/releases) or, for the latest development version, [here](https://github.com/Miner34dev/Minetest-log-data-extractor/archive/refs/heads/main.zip)
 - Extract the archive
-- Copy mt_log_data_extractor to your project folder
+- Copy mt_log_data_extractor.py to your project folder
