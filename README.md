@@ -8,6 +8,6 @@ Currently, there is no pip package for this module, so you will need to istall i
 - Extract the archive
 - Copy mt_log_data_extractor.py to your project folder
 # Contributing
-If you would like to contribute to this project you can do so through GitHub by forking the repository and sending a pull request (PR). You can also simply report issues (bugs).
+If you would like to contribute to this project you can do so through GitHub by forking the repository and sending a pull request (PR). You can also simply report bugs.
 
 **We also need a icon for this project.**
