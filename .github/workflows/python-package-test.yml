@@ -31,4 +31,4 @@ jobs:
     - name: Test importing
       run: |
         cd ~/.local/lib/python${{ matrix.python-version }}/site-packages/
-        python3 mt_log_data_extractor.py
+        python${{ matrix.python-version }} mt_log_data_extractor.py
