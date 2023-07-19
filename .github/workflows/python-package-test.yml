@@ -30,5 +30,5 @@ jobs:
         python3 setup.py install --user
     - name: Test importing
       run: |
-        cd ~/.local/lib/${{ matrix.python-version }}/site-packages/
+        cd ~/.local/lib/python${{ matrix.python-version }}/site-packages/
         python3 mt_log_data_extractor.py
