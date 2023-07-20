@@ -8,6 +8,54 @@ Currently, there is no pip package for this module, so you will need to istall i
 - Extract the archive
 - go into the extracted folder using ```cd```
 - Run ```python setup.py install --user``` (Without ```--user``` to install globally)
+# Getting started
+Import this module:
+```python3
+from mt_log_data_extractor import import_mt_log
+```
+Now, to get your data, use:
+```python3
+import_mt_log(file) #with a path such as /home/username/.minetest/debug.txt (linux example) instead of file
+```
+example:
+```python3
+mt_actions = import_mt_log("/home/hugo/.minetest/debug.txt")
+```
+What does this module output? Well, the answer is not that simple.
+Here is the tree of an example output:
+```
+{"2023":
+	| {"07":
+	|	| {"20":
+	|	|	| {"13":
+	|	|	|	| {"01":
+	|	|	|	|	| {"24":
+	|	|	|	|	|	| [
+	|	|	|	|	|	|	| "player1"
+	|	|	|	|	|	|	| "joins game"
+	|	|	|	|	|	| ]
+	|	|	|	|	| }
+	|	|	|	|	| {"36":
+	|	|	|	|	|	| [
+	|	|	|	|	|	|	| "player1"
+	|	|	|	|	|	|	| "digs"
+	|	|	|	|	|	|	| "(12, 4, 105)"
+	|	|	|	|	|	| ]
+	|	|	|	|	| }
+	|	|	|	| }
+	|	|	|	| {"02":
+	|	|	|	|	| {"12":
+	|	|	|	|	|	| [
+	|	|	|	|	|	|	| "Server:"
+	|	|	|	|	|	|	| "Shutting down"
+	|	|	|	|	|	| ]
+	|	|	|	|	| }
+	|	|	|	| }
+	|	|	| }
+	|	| }
+	| }
+}
+```
 # Contributing
 If you would like to contribute to this project you can do so through GitHub by forking the repository and sending a pull request (PR). You can also simply report bugs.
 
