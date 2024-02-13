@@ -1,4 +1,6 @@
 # MineTest Log Data Extractor
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 MT log data extractor is a python module that extracts data from Minetest logs.
 # License
 Minetest log data extractor is a Open Source project under the MIT License (see [LICENSE](./LICENSE) file for details).
